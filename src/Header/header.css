@@ -3,7 +3,7 @@
   background-image: url("../img/beer-mugs.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 40vh;
 
 }
 h1  {
@@ -12,6 +12,8 @@ h1  {
   color: white;
   padding-left: 100px;
   padding-top: 0px;
+}
 
-
+.navbar {
+  display: inline;
 }
