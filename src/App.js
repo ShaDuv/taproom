@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TapList from './Taps/TapList';
-import Banner from "./Header/Banner"
+import Banner from './Header/Banner';
 function App() {
   return (
     <div className='App'>

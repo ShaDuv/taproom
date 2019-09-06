@@ -1,9 +1,17 @@
 
-
 .banner {
   background-image: url("../img/beer-mugs.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+
+}
+h1  {
   font-family: 'Rock Salt', cursive;
+  font-size: 5rem;
+  color: white;
+  padding-left: 100px;
+  padding-top: 0px;
+
+
 }
