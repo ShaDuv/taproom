@@ -4,11 +4,12 @@ import taps from './taps';
 function TapCard(props) {
   return (
     <div className='tap-card'>
-      <h3>{props.taps.description}</h3>
-      <p>{props.taps.brewery}</p>
-      <p>{props.taps.style}</p>
-      <p>{props.taps.abv}</p>
-      <p>{props.taps.price}</p>
+      <h3>{props.tap.name}</h3>
+      <p>{props.tap.description}</p>
+      <p>{props.tap.brewery}</p>
+      <p>{props.tap.style}</p>
+      <p>{props.tap.abv}</p>
+      <p>{props.tap.price}</p>
     </div>
   );
 };

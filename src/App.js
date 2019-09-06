@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import TapCard from './Taps/TapCard';
+import TapList from './Taps/TapList';
 
 function App() {
   return (
     <div className='App'>
-      <TapCard/>
+      <TapList/>
     </div>
   );
 }
