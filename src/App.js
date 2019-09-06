@@ -1,16 +1,19 @@
 import React from 'react';
 import './App.css';
 import TapList from './Taps/TapList';
-import Banner from './Header/Banner';
-import Navbar from './Header/NavBar';
+import Header from './Header/Header';
 import AboutUs from './About/About';
+import { Switch, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <div className='App'>
-      <Banner/>
-      <Navbar/>
-      <TapList/>
-      <AboutUs/>
+    <div>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component = {Header} />
+        <Route path='/TapList' component = {TapList} />
+        <Route path='/About' component ={ AboutUs} />
+      </Switch>
     </div>
   );
 }
