@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   height: 40vh;
 
+
 }
 h1  {
   font-family: 'Rock Salt', cursive;
@@ -12,6 +13,7 @@ h1  {
   color: white;
   padding-left: 100px;
   padding-top: 0px;
+    margin-top: -50px,
 }
 
 .navbar {
@@ -19,5 +21,6 @@ h1  {
     color: White;
     height: 3rem;
     text-align: center;
-    
+
+
 }
