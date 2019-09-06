@@ -3,10 +3,11 @@ import './App.css';
 import TapList from './Taps/TapList';
 import Header from './Header/Header';
 import AboutUs from './About/About';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
+    <BrowserRouter>
     <div>
       <Header/>
       <Switch>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/About' component ={ AboutUs} />
       </Switch>
     </div>
+  </BrowserRouter>
   );
 }
 

@@ -7,7 +7,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'typeface-rock-salt';
-import { HashRouter } from 'react-router-dom';
 
 const render = Component => {
   return ReactDOM.render(
