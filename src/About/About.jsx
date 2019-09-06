@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutUs(props) {
   let aboutStyles = {
-    backgroundColor: '#343049',
+    backgroundColor: '#454930',
     fontFamily: 'sans-serif',
     paddingTop: '50px',
     color: 'white',
