@@ -5,6 +5,7 @@ import Header from './Header/Header';
 import AboutUs from './About/About';
 import Home from './Home/Home';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import PosList from './Employee/POSList';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/' component = {Home} />
         <Route path='/TapList' component = {TapList} />
         <Route path='/AboutUs' component ={AboutUs} />
+        <Route path='/Employee' component ={PosList} />
       </Switch>
     </div>
   </BrowserRouter>

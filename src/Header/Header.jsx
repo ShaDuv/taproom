@@ -9,7 +9,7 @@ function Header() {
       <h1>Tapped Out</h1>
       </div>
       <div className='navbar'>
-        <Link to="/">Home</Link> | <Link to="/TapList">What's On Tap</Link> | <Link to="/AboutUs">About Us</Link>
+        <Link to="/">Home</Link> | <Link to="/TapList">What's On Tap</Link> | <Link to="/AboutUs">About Us</Link> | <Link to="/Employee">Employees Only</Link>
       </div>
     </div>
   );

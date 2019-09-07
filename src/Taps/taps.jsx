@@ -22,7 +22,7 @@ const taps = [
   },
 
   {
-    id: 03,
+    id: 3,
     name: 'Made Marion',
     description: 'The sunrise of summer, the Oregon Made Marion is a blend of Oregon grown Marionberries and hard apple cider. Ripe berry flavors and a crisp apple bite combine with a rich ruby color to make this cider a delicious way to celebrate the bounty of Oregon!',
     brewery: '2 Towns',
@@ -44,7 +44,7 @@ const taps = [
   },
 
   {
-    id: 05,
+    id: 5,
     name: 'Amber',
     description: 'The name of this beer style comes from the German word "alt" meaning "old". This refers to the aging that alts undergo since they ferment more slowly and at colder temperatures than most ales. Slow fermentation helps condition the flavors in Alaskan Amber, contributing to its overall balance and smoothness.',
     brewery: 'Alaskan',
