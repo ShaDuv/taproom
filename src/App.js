@@ -28,7 +28,7 @@ class App extends React.Component {
             <Route exact path='/' component = {Home} />
             <Route path='/TapList' component = {TapList} />
             <Route path='/AboutUs' component ={AboutUs} />
-            <Route path='/Employee' render={(props) => <PosList {...props} data={this.state.taps} />} />
+            <Route path='/Employee' render={(props) => <PosList {...props} onSale={this.handleSell} data={this.state.taps} />} />
           </Switch>
         </div>
       </BrowserRouter>
