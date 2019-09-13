@@ -6,8 +6,7 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-class TapList extends React.Component {
-  render() {
+function TapList ()) {
     const tapList = taps.map(tap => <TapCard key={tap.id} tap = {tap}/>);
     return (
       <div className='row'>
@@ -18,6 +17,5 @@ class TapList extends React.Component {
       </main>
       </div>
     );
-  }
 }
 export default TapList;
