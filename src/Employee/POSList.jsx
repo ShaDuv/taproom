@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import POSCard from './POSCard';
 import taps from '../Taps/taps';
 
-function PosList() {
+function PosList(props) {
   const posList = taps.map(tap => <POSCard key={tap.id} tap = {tap}/>);
   return (
     <div className='row'>

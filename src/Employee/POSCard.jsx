@@ -8,6 +8,7 @@ function POSCard(props) {
       <div className='container'>
       <h3>{props.tap.name}</h3>
       <h3>{props.tap.pints}</h3>
+      <button variant='light' className='btn' onClick={props.onSleep}> Sell </button>
       </div>
     </div>
   );
