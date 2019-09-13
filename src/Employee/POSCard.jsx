@@ -1,5 +1,4 @@
 import React from 'react';
-import taps from '../Taps/taps';
 import css from './POS.css';
 
 function POSCard(props) {
@@ -8,7 +7,7 @@ function POSCard(props) {
       <div className='container'>
       <h3>{props.tap.name}</h3>
       <h3>{props.tap.pints}</h3>
-      <button variant='light' className='btn' onClick={props.onSale}> Sell </button>
+      <button type="button" variant='light' className='btn' onClick={() => props.onSale(props.index)}> Sell </button>
       </div>
     </div>
   );

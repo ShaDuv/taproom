@@ -16,12 +16,23 @@ class App extends React.Component {
     };
     this.handleSell = this.handleSell.bind(this);
   };
-  handleSell = (props) => {
-    const newState = this.state.taps[props.id].count -1;
-    this.setState(
-      {taps: newState}
-    )
+  handleSell = i => {
+    this.setState(state => {
+      const list = state.taps.map((tap, j) => {
+        if (j === i) {
+          tap.pints = tap.pints - 1;
+          return tap;
+        } else {
+          return tap;
+        }
+      });
+      console.log(list);
+      return {
+        taps: list,
+      };
+    });
   };
+
   render() {
     return (
       <BrowserRouter>
@@ -38,4 +49,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
