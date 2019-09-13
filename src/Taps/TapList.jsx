@@ -6,16 +6,16 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-function TapList ()) {
-    const tapList = taps.map(tap => <TapCard key={tap.id} tap = {tap}/>);
-    return (
-      <div className='row'>
+function TapList() {
+  const tapList = taps.map(tap => <TapCard key={tap.id} tap = {tap}/>);
+  return (
+    <div className='row'>
       <main className='tap-area'>
-      <div className='tap-list'>
-      {tapList}
-      </div>
+        <div className='tap-list'>
+          {tapList}
+        </div>
       </main>
-      </div>
-    );
+    </div>
+  );
 }
 export default TapList;
