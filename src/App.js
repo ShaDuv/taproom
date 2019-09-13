@@ -6,23 +6,18 @@ import AboutUs from './About/About';
 import Home from './Home/Home';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import PosList from './Employee/POSList';
-import taps from './Taps/taps';
+import defaultTaps from './Taps/taps';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = ({
-      pints: taps
-    }
-    );
+  constructor(props) {
+    super(props);
+    this.state = {
+      taps: defaultTaps,
+    };
+    this.handleSell = this.handleSell.bind(this);
   };
   handleSell = () => {
-    const updatePints = this.state.taps.pints - 1;
-    this.setState(
-      {
-        pints: updatePints,
-      }
-    );
+    console.log('working');
   };
   render() {
     return (
@@ -33,7 +28,7 @@ class App extends React.Component {
             <Route exact path='/' component = {Home} />
             <Route path='/TapList' component = {TapList} />
             <Route path='/AboutUs' component ={AboutUs} />
-            <Route path='/Employee' onSleep={this.handleSale} statInfo={this.state} component ={PosList} />
+            <Route path='/Employee' render={(props) => <PosList {...props} data={this.state.taps} />} />
           </Switch>
         </div>
       </BrowserRouter>

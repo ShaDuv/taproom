@@ -1,4 +1,4 @@
-let taps = [
+let defaultTaps = [
   {
     id: 1,
     name: 'Joe IPA',
@@ -100,4 +100,4 @@ let taps = [
 
 ];
 
-export default taps;
+export default defaultTaps;
