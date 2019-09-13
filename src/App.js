@@ -10,19 +10,20 @@ import taps from './Taps/taps';
 
 class App extends React.Component {
   constructor() {
-    super()
-    this.state = (
-      taps
+    super();
+    this.state = ({
+      pints: taps
+    }
     );
-  }
+  };
   handleSell = () => {
-    const updatePints = this.state.taps.pints -1;
+    const updatePints = this.state.taps.pints - 1;
     this.setState(
       {
         pints: updatePints,
       }
     );
-  }
+  };
   render() {
     return (
       <BrowserRouter>
@@ -32,7 +33,7 @@ class App extends React.Component {
             <Route exact path='/' component = {Home} />
             <Route path='/TapList' component = {TapList} />
             <Route path='/AboutUs' component ={AboutUs} />
-            <Route path='/Employee' onSleep={this.handleSale} component ={PosList} />
+            <Route path='/Employee' onSleep={this.handleSale} statInfo={this.state} component ={PosList} />
           </Switch>
         </div>
       </BrowserRouter>

@@ -4,7 +4,8 @@ import POSCard from './POSCard';
 import taps from '../Taps/taps';
 
 function PosList(props) {
-  const posList = taps.map(tap => <POSCard key={tap.id} tap = {tap}/>);
+  console.log(props);
+  const posList = props.statInfo.map(tap => <POSCard key={tap.id} tap = {tap}/>);
   return (
     <div className='row'>
       <main className='pos-area'>

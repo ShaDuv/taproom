@@ -1,4 +1,4 @@
-const taps = [
+let taps = [
   {
     id: 1,
     name: 'Joe IPA',
