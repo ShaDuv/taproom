@@ -16,8 +16,11 @@ class App extends React.Component {
     };
     this.handleSell = this.handleSell.bind(this);
   };
-  handleSell = () => {
-    console.log('working');
+  handleSell = (props) => {
+    const newState = this.state.taps[props.id].count -1;
+    this.setState(
+      {taps: newState}
+    )
   };
   render() {
     return (
